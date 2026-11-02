@@ -1,4 +1,4 @@
-# CodeAlpha — Handwritten Character Recognition
+# Handwritten Digit Recognition
 
 A complete, end-to-end **Handwritten Digit Recognition** system built with **TensorFlow/Keras**, trained on the classic **MNIST** dataset. The project covers data loading and preprocessing, CNN model design, training, evaluation, visualization, and single-image inference — all organized into a clean, modular, production-style codebase.
 
@@ -16,7 +16,7 @@ This project trains a **Convolutional Neural Network (CNN)** to classify handwri
 ## Project Structure
 
 ```
-CodeAlpha_HandwrittenCharacterRecognition/
+Handwritten-Digit-Recognition/
 │
 ├── data/                      # Local MNIST dataset cache (mnist.npz)
 ├── models/                    # Saved trained model (handwritten_model.keras)
@@ -190,4 +190,4 @@ These settings improve reproducibility, although minor differences between runs 
 
 ## License
 
-This project was built as part of the **CodeAlpha** internship/training program and is intended for educational purposes.
+This project is intended for educational purposes.
