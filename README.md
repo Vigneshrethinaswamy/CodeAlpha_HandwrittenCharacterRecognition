@@ -88,7 +88,7 @@ python main.py
 This will:
 1. Load and preprocess the MNIST dataset (normalize to `[0, 1]`, reshape to `(28, 28, 1)`).
 2. Build the CNN model.
-3. Train for 10 epochs (with a 10% validation split).
+3. Train for up to 15 epochs (with a 10% validation split; early stopping may stop sooner).
 4. Save the trained model to `models/handwritten_model.keras`.
 5. Generate and save training/validation accuracy and loss plots to `plots/`.
 6. Evaluate the model on the test set, printing accuracy, a full classification report, and saving a confusion matrix plot.
