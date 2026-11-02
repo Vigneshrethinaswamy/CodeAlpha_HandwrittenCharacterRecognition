@@ -6,7 +6,7 @@ Entry point for the Handwritten Character Recognition project.
 Running this script will:
     1. Load and preprocess the MNIST dataset.
     2. Build the CNN model.
-    3. Train the model for 10 epochs.
+    3. Train the model for up to 15 epochs with early stopping.
     4. Save the trained model to models/handwritten_model.keras
     5. Generate and save training accuracy/loss plots.
     6. Evaluate the model on the test set (accuracy, classification
@@ -24,7 +24,7 @@ from src.evaluate import evaluate_model
 def main():
     """Run the full training + evaluation pipeline end to end."""
     print("\n" + "#" * 60)
-    print("# Handwritten Character Recognition - CodeAlpha Project")
+    print("# Handwritten Digit Recognition")
     print("#" * 60 + "\n")
 
     # --- Train the model (also saves the model and training plots) ---
