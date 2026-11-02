@@ -1,10 +1,10 @@
 # Handwritten Digit Recognition
 
-A complete, end-to-end **Handwritten Digit Recognition** system built with **TensorFlow/Keras**, trained on the classic **MNIST** dataset. The project covers data loading and preprocessing, CNN model design, training, evaluation, visualization, and single-image inference — all organized into a clean, modular, production-style codebase.
+A complete, end-to-end **Handwritten Digit Recognition** system implemented with **TensorFlow/Keras**, trained on the classic **MNIST** dataset. The project covers data loading and preprocessing, CNN model design, training, evaluation, visualization, and single-image inference — all organized into a clean, modular, production-style codebase.
 
 ## Overview
 
-This project trains a **Convolutional Neural Network (CNN)** to classify handwritten digits (0–9) from 28×28 grayscale images. After 10 epochs of training, the model achieves **~99.1% accuracy** on the held-out MNIST test set.
+This project trains a **Convolutional Neural Network (CNN)** to classify handwritten digits (0–9) from 28×28 grayscale images. The training script is configured for up to **15 epochs**, with early stopping and checkpointing. The README's recorded test report is shown below; it should be treated as a previously recorded result until reproduced from a clean run of the current code.
 
 | Metric | Value |
 |---|---|
@@ -62,7 +62,7 @@ Input (28, 28, 1)
 ### 1. Clone / copy the project and navigate into it
 
 ```bash
-cd CodeAlpha_HandwrittenCharacterRecognition
+cd Handwritten-Digit-Recognition
 ```
 
 ### 2. Install dependencies
@@ -145,9 +145,11 @@ After running `main.py` or `src/train.py` / `src/evaluate.py`, the following fil
 | `plots/confusion_matrix.png` | Confusion matrix heatmap on the test set |
 | `plots/classification_report.txt` | Precision, recall, F1-score per digit class |
 
-## Results
+## Recorded results
 
-**Classification Report (Test Set):**
+The following classification report is present in the project documentation. It records 99.30% accuracy on the 10,000-image MNIST test set; regenerate it with the current training/evaluation code before treating it as a newly reproduced result.
+
+**Classification Report (Recorded Test Run):**
 
 ```
               precision    recall  f1-score   support
@@ -186,7 +188,7 @@ Training uses:
 - batch_size = 128
 - fixed random seeds (TensorFlow and NumPy set to 42)
 
-These settings improve reproducibility, although minor differences between runs may still occur depending on hardware and TensorFlow internals. The model consistently achieves accuracy in the high 98%–99% range on the MNIST test set.
+These settings improve reproducibility, although minor differences between runs may still occur depending on hardware and TensorFlow internals. The documented run reports 99.30% test accuracy. Actual results can vary with the software environment and training run.
 
 ## License
 
